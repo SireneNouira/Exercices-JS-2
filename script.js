@@ -46,6 +46,18 @@
 //     champ.forEach((element)=> (element.value = ""));
 // }
 
-
 // EXERCICE 5
 
+const imgs = document.querySelectorAll("img");
+imgs.forEach((img) => {
+  img.addEventListener("mouseover", handleMouseOverAddNewImg);
+  
+});
+
+
+function handleMouseOverAddNewImg(event) {
+    console.log(event.target);
+    
+    event.target.src = "images/image1_2.jpg";
+  }
+  
