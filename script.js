@@ -1,15 +1,14 @@
 // EXERCICE 1
 
 // let img = document.querySelector("img");
-// img.addEventListener("mouseover", handleMouseOverAddNewSrc);
+// img.addEventListener("mouseover", handleMouseOverAddNewSrc); mouseenter
 // function handleMouseOverAddNewSrc() {
 
 //     img.src = "images/image1_2.jpg";
 
 // }
 
-// img.addEventListener("mouseout", handleMouseOutAddNewSrc);
-// function handleMouseOutAddNewSrc() {
+// img.addEventListener("mouseout", handleMouseOutAddNewSrc); mouseleave
 
 //     img.src = "images/image1.jpg";
 
@@ -43,21 +42,20 @@
 // buttonRaz.addEventListener("click", handleRemoveDonnees);
 // function handleRemoveDonnees() {
 
-//     champ.forEach((element)=> (element.value = ""));
+//     document.querySelectorAll("input").forEach((input)=> (input.value = ""));
 // }
 
 // EXERCICE 5
 
-const imgs = document.querySelectorAll("img");
-imgs.forEach((img) => {
-  img.addEventListener("mouseover", handleMouseOverAddNewImg);
+// const imgs = document.querySelectorAll("div.container img");
+// imgs.forEach((img) => {
+//   img.addEventListener("mouseover", handleMouseOverAddNewImg);
   
-});
+// });
 
 
-function handleMouseOverAddNewImg(event) {
-    console.log(event.target);
-    
-    event.target.src = "images/image1_2.jpg";
-  }
+// function handleMouseOverAddNewImg(event) {
+//     event.target.src =  event.target.src.replace(".jpg", "_2.jpg");
+//     event.target.removeEventListener("mouseover", handleMouseOverAddNewImg);  }
+
   
